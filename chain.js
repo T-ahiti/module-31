@@ -15,7 +15,7 @@ const data2 = {
     ]
 }
 // second product price 
-console.log(data2.data[1].price)
+// console.log(data2.data[1].price)
 
 
 const user = {
@@ -30,3 +30,18 @@ const user = {
         city: ' dhaka'
     }
 }
+
+console.log(user.address.street.second)
+
+// understand chaining
+
+const user2 = {
+    id:23432,
+    name: 'shoriful raj',
+    address : {
+        city: ' dhaka',
+        country : 'bangladesh'
+    }
+}
+console.log(user2.address.street?.second)
+// ei qn mark identify kore je ei property ta ache naki, thakle output dibe otherwise undefiend dekhabe
