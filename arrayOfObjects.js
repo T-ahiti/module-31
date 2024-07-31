@@ -8,3 +8,18 @@ const products = [
 
 const names = products.map(p => p.name)
 console.log(names)
+
+// foreach
+products.forEach(p => console.log(p.id))
+
+// filter
+const expensive = products.filter(p => p.price > 44000)
+console.log(expensive)
+
+// find
+const affordable = products.find(p => p.price < 44000)
+console.log(affordable)
+
+// reduce
+const total = products.reduce( (acm, current) => acm + current.price, 0)
+console.log(total)
