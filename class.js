@@ -12,3 +12,19 @@ class Product {
       this.name = name;
     }
 }
+
+class Teacher {
+  constructor(name, subject){
+     this.name = name
+     this.subject = subject
+  }
+  lecture(){
+    console.log('sir is teaching math')
+  }
+}
+
+const tapan = new Teacher('tapon sir', 'physics')
+console.log(tapan)
+
+const rashid = new Teacher('rashidb sir', 'english')
+console.log(rashid)
